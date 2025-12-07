@@ -1,35 +1,39 @@
 # Conway's Game of Life
-The Game of Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. It is Turing complete and can simulate a universal constructor or any other Turing machine.
 
-More information in [Wikipedia](https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
+A lightweight, zero-dependency C++ implementation of Conway's Game of Life for the terminal.
 
-## How to run
-First make sure `g++` is installed. Then:
+The **Game of Life** is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. It is Turing complete and can simulate a universal constructor or any other Turing machine.
+
+[More information on Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+
+## How to Run
+
+First, ensure `g++` and `make` are installed.
+
 ```bash
-git clone htts://github.com/alireza2317/conway_game_of_life
+git clone https://github.com/alireza2317/conway_game_of_life.git
 cd conway_game_of_life
 make
 ./gameoflife
 ```
 
 ## Customize
-You can change the size of the map in `game_of_life.h`, by changing the `W`(width) and `H`(height) values.
+- Map Size: Edit `W` (width) and `H` (height) in `game_of_life.h`.
+- Speed: Edit the `DELAY` value in `game_of_life.h` (in milliseconds). Lower values = faster evolution.
 
-You can also change the speed of evolving by changing the `DELAY` value. It's a number in miliseconds. The less the `DELAY`, the faster the evolution.
+## Patterns
+By default, the game starts with a random map. You can enable specific patterns by uncommenting lines in `main.cpp`:
 
-### Patterns
-By default the game starts in a random map. You can use different patterns provided in the code. In `main.cpp` file, uncomment the desired pattern:
-```c++
-	//set_randoms();
-	//set_heart();
-	//set_glider();
-	//set_pentadecathlon();
+```C++
+// set_randoms();
+// set_heart();
+set_glider(); // Example: Glider is now active
+// set_pentadecathlon();
 ```
 
-After any customizaiton, run:
-```bash
+After any customization, recompile and run:
+
+```Bash
 make
 ./gameoflife
 ```
-
-Enjoy :)
