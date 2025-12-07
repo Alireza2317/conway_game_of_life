@@ -10,7 +10,7 @@
 void clear_screen();
 void draw();
 void evolve();
-void delay(int);
+void delay(unsigned long long);
 void print_info();
 
 void set_randoms();

@@ -1,5 +1,6 @@
 #include <iostream>
-#include <unistd.h>
+#include <thread>
+#include <chrono>
 #include "game_of_life.h"
 using std::cout;
 using std::endl;
@@ -19,6 +20,7 @@ void draw() {
 				cout << ALIVE;
 			else
 				cout << " " ;
+			cout << " ";
 		}
 		cout << endl;
 	}
@@ -74,8 +76,8 @@ void evolve() {
 	}
 }
 
-void delay(int ms) {
-	usleep(ms*1000);
+void delay(unsigned long long ms) {
+	std::this_thread::sleep_for(std::chrono::milliseconds(ms));
 }
 
 

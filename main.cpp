@@ -5,7 +5,7 @@
 int main() {
 	clear_screen();
 	srand(time(0));
-	
+
 	set_randoms();
 	//set_heart();
 	//set_glider();
@@ -13,7 +13,7 @@ int main() {
 
 	draw();
 	print_info();
-	delay(1000);
+	delay(500);
 	while (true) {
 		evolve();
 		draw();
