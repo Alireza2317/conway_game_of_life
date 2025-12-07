@@ -1,11 +1,11 @@
 #ifndef GAME_OF_LIFE_H
 #define GAME_OF_LIFE_H
 
-#define W 120
+#define W 60
 #define H 35
 #define ALIVE "\u25c9"	//◉
 #define LIVE_PERCENT 20
-#define DELAY 400
+#define DELAY 250
 
 void clear_screen();
 void draw();
