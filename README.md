@@ -6,6 +6,11 @@ The **Game of Life** is a cellular automaton devised by the British mathematicia
 
 [More information on Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
+## Demo
+<p align="center">
+	<img src="https://github.com/user-attachments/assets/393eefdd-533e-4512-8d6b-154f1b225f24" alt="Game of Life Demo" width=400>
+</p>
+
 ## How to Run
 
 First, ensure `g++` and `make` are installed.
